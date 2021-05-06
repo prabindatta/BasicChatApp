@@ -16,12 +16,12 @@ struct ChatViewModel {
     }
     
     func add(message: String) {
-        let userMessage = ChatMessage.user(message: message)
-        let agentMessage = ChatMessage.user(message: message)
         
         if Bool.random() {
+            let userMessage = ChatMessage.user(message: message)
             self.dataSource?.data.value.append(userMessage)
         } else {
+            let agentMessage = ChatMessage.agent(message: message)
             self.dataSource?.data.value.append(agentMessage)
         }
     }

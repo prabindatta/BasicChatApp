@@ -32,7 +32,7 @@ class ChatMessagesDataSource: GenericDataSource<ChatMessage>, UITableViewDataSou
         
         switch message {
         case .agent(let agentMessage):
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as? AgentBubbleCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "AgentCell", for: indexPath) as? AgentBubbleCell else {
                 fatalError("UserCell not found")
             }
             print("Agent Message: \(agentMessage)")

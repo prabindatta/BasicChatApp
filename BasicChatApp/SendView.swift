@@ -31,7 +31,7 @@ extension SendView: UITextViewDelegate {
         let textViewHeight = max(self.messageTextView.sizeThatFits(self.messageTextView.bounds.size).height, 44.0)
         let numLines = (self.messageTextView.contentSize.height / CGFloat(self.messageTextView.font?.lineHeight ?? 0.0))
         guard numLines < 5 else { return }
-        Logger().debug("numLines: \(numLines)")
+//        Logger().debug("numLines: \(numLines)")
         self.textViewHeightConstraint.constant = textViewHeight
     }
 }

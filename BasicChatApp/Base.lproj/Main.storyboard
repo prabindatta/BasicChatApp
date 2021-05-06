@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="M9h-vk-RAn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactListItemCell" id="M9h-vk-RAn">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M9h-vk-RAn" id="NaR-ly-nom">
@@ -116,7 +116,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="gc9-gd-t0t" secondAttribute="trailing" constant="16" id="1K7-Wa-niX"/>
                                                 <constraint firstItem="gc9-gd-t0t" firstAttribute="top" secondItem="MqO-Vt-u32" secondAttribute="top" constant="4" id="QZf-91-0vr"/>
-                                                <constraint firstItem="gc9-gd-t0t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MqO-Vt-u32" secondAttribute="leading" constant="16" id="Vgt-tg-KwN"/>
+                                                <constraint firstItem="gc9-gd-t0t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MqO-Vt-u32" secondAttribute="leading" constant="32" id="Vgt-tg-KwN"/>
                                                 <constraint firstAttribute="bottom" secondItem="gc9-gd-t0t" secondAttribute="bottom" constant="4" id="jPn-tc-bNM"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -124,7 +124,7 @@
                                             <outlet property="userMessageLabel" destination="MBf-iz-IeJ" id="PoN-C9-1y9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LqF-Tf-FH5" customClass="AgentBubbleCell" customModule="BasicChatApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AgentCell" id="LqF-Tf-FH5" customClass="AgentBubbleCell" customModule="BasicChatApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64.5" width="414" height="38.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LqF-Tf-FH5" id="N76-GG-KTy">
@@ -165,7 +165,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="NNU-sI-5Io" secondAttribute="bottom" constant="5" id="4Ok-UX-bLX"/>
                                                 <constraint firstItem="NNU-sI-5Io" firstAttribute="top" secondItem="N76-GG-KTy" secondAttribute="top" constant="5" id="fBk-uY-8f5"/>
                                                 <constraint firstItem="NNU-sI-5Io" firstAttribute="leading" secondItem="N76-GG-KTy" secondAttribute="leading" constant="16" id="mtt-rQ-qfG"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NNU-sI-5Io" secondAttribute="trailing" constant="16" id="wau-sc-XNf"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NNU-sI-5Io" secondAttribute="trailing" constant="32" id="wau-sc-XNf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
